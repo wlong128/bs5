@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bs5book-單欄(圖片+內文+按鈕)</title>
+  <!-- Bootstrap 5.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- jquery 3.6.1 -->
+  <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+    integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+  <!-- w3-include-html -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <!-- bootstrap.bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <!-- CSS 預設區 -->
+  <link rel="stylesheet" href="css/default.css">
+  <!-- CSS 自訂區 -->
+  <link rel="stylesheet" href="css/form-1.css?v=2">
+  <!-- form-1 插件 -->
+  <script src="js/aj-address.js" type="text/javascript"></script>
+  <script>
+    $(document).ready(function () {
+      // 載入地址選項
+      $('.address-zone').ajaddress();
+      // 判斷是否有勾選同意接受隱私聲明
+      $('#agree').on('change', function () {
+        if ($(this).prop('checked')) {
+          $('#send').removeClass('disabled');
+        } else {
+          $('#send').addClass('disabled')
+        }
+      })
+      $('#agree_2').on('change', function () {
+        if ($(this).prop('checked')) {
+          $('#send_2').removeClass('disabled');
+        } else {
+          $('#send_2').addClass('disabled')
+        }
+      })
+    });
+  </script>
+</head>
+
+<body>
+  <div w3-include-html="include/header.html"></div>
+
+  <!-- <div w3-include-html="form/form-1.html"></div> -->
+  <!-- form-1 -->
+  <div class="row">
+    <a href="" data-bs-toggle="modal" data-bs-target=".bs-example-modal-lg">隱私聲明</a>
+  </div>
+
+  <!-- 隱私聲明 Modal -->
+  <div id="privacyModal" class="modal fade bs-example-modal-lg" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <!-- header modal -->
+        <div class="modal-header">
+          <h5 id="exampleModalLabel" class="modal-title">
+            隱私聲明
+          </h5>
+          <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- body modal -->
+        <div class="modal-body">
+          <p>親愛的朋友您好</p>
+          <p>
+            您在360d才庫人力資源網站及才庫人力資源事業群之各子網站所登錄的個人資料，我們嚴格遵守中華民國相關隱私權保護之法律外，更將以非常嚴謹的態度與具體作為，管理及保護您個人資料。為幫助您瞭解我們將如何蒐集、運用及保護您所提供的個人資訊，360d才庫人力資源網站謹以下列聲明，對外說明我們的隱私權保護政策。
+          </p>
+          <h4 class="margin-bottom-0">360d才庫事業群－個資法保護政策公告(一)</h4>
+          <p class="margin-top-0">360d才庫事業群經由以下途徑取得您的資料：</p>
+          <p>
+            ● 會員申請（才庫iJob網路會員、才庫-JCASE外包網網路會員、電子報會員等<br>
+            ● 由360d才庫人力資源舉辦或協辦的相關講座／實體、線上活動／網路問卷調查<br>
+            ● 企業或個人輔導與諮詢<br>
+            ● 參與360d才庫事業群其他相關活動<br>
+            ● 使用心理測驗網站作業系統<br>
+            ● 與才庫有業務往來、接受服務的窗口
+          </p>
+          <p>
+            另外，當您依照360d才庫iJob登錄履歷表格式，確實填寫應徵資料並完成登錄時，才庫電腦系統會將您的履歷表自動E-Mail至所有符合您條件的求才廠商及才庫人力資源事業部，做為求職媒合之用；而求才廠商之人事承辦人亦可主動查詢(該頁面不對外公開，僅供求才廠商指定之人事承辦人使用)設定條件查詢您的履歷表，做為面試徵才之用。才庫人力資源事業部的服務人員也會主動通知您工作媒合訊息。
+          </p>
+          <p>
+            為提供更好的服務及了解求才者、求職者的需求，才庫行銷中心會發送問卷，進行調查、統計與分析，除供內部研究外，我們會視需要對外公佈該等數據及說明文字，但不涉及特定個人之資料。除非您已主動表明不接收之意願，否則我們會定時或不定時提供您360d網站或各子網站提供之各項活動、職場或會員好康資訊。
+          </p>
+          <p>
+            未來，為了繼續提供相關訊息及服務，360d才庫事業群將遵守個人資料保護法之規定妥善保存您的個人資料。您可依個人資料保護法，就您的個人資料向
+            360d才庫事業群請求：(1)查閱或刪除(2)補充或更正(3)停止蒐集、處理及利用。 若您未來不希望再收到 360d才庫事業群所提供之相關資訊或服務， 歡迎來信至服務信箱與我們聯繫：
+            <span>service@360d.com.tw</span>。
+          </p>
+          <p>
+            個人資料的保護措施：<br>
+            360d才庫人力資源網站已與所有從業人員簽署保密契約，保密範圍含括您未公開於網站上的個人連絡資料，我們會善盡保密之義務。360d才庫於接受求才廠商刊登求才啟事前，會與求才廠商簽署網路徵才服務契約，內載特約遵守事項，若一旦發現求才廠商有違約之情形時，我們除立即
+            關閉其求才啟事外，更將對之採取必要之法律行動。 我們為防止外人非法入侵360d才庫人力資源網站資料庫系統，從事竄改、盜拷或
+            破壞資料等不法行為，我們已裝設防火牆系統，並有專人負責資料庫之管理及維護工作。個人資料查閱對象的篩選：為維護您的隱私權益及個人資料之安全，我們會 竭盡最大之努力，嚴格篩選求才廠商。
+            您的履歷表及個人連絡資料僅供通過360d才庫人力資源核可之求才廠商查閱，不於網站公開，非360d才庫人力資源核可之求才廠商無法在才庫網站查詢您的任何資料。
+          </p>
+
+          <h4 class="margin-bottom-0">心理測驗系統－個資法保護政策公告(二)</h4>
+          <p class="margin-top-0">
+            您在「才庫人力資源顧問股份有限公司」所登錄之個人資料及心理測驗評估結果，我們以非常嚴謹的態度與具體作為，管理及保護您的個人資料，對於任何違法盜用或揭露您個人資料的不法及不當行為，我們定將採取必要的法律作為，以確保您個人隱私的安全。以下為我們對您隱私權保護的承諾，請您詳閱下列有關個人資料保護相關告知及說明：
+          </p>
+          <p>
+            一、告知事項：<br>
+            ● 公司名稱：才庫人力資源顧問股份有限公司<br>
+            ● 蒐集之目的：<br>
+            項目代號：002，人事管理(包含網站會員管理、甄選、離職及所屬員工基本資訊、現職、學經歷、考試分發、終身學習訓練進修、考績獎懲、銓審、薪資待遇、差勤、福利措施、褫奪公權、特殊查核或其他人事措施)。<br>
+            項目代號：109，教育或訓練行政。<br>
+            項目代號：157，調查、統計與研究分析。<br>
+            項目代號：182，其他諮詢與顧問服務。
+          </p>
+          <p>
+            ● 個人資料之類別：<br>
+            包括辨識類(包括辨識個人者/辨識財務者/辨識政府資料中之辯識者)/特徵類/教育/工作表現與潛力之評估與其他..等。實際項目為心理測驗基本資料填寫欄位。
+          </p>
+          <p>
+            ● 個人資料利用期間/地區/對象及方式：<br>
+            期間：至本公司停止網站服務。<br>
+            地區：台灣及台灣以外地區。<br>
+            對象及方式：<br>
+            才庫人力資源顧問股份有限公司負責招募、聘僱事宜、訓練等人資相關作業之必要相關人員利用之。<br>
+            合作客戶(包括公務機關及非公務機關)負責人力資源管理作業之必要相關人員利用之。<br>
+            委託施測之合作客戶 (包括公務機關及非公務機關)負責招募、聘僱事宜、訓練等人資相關作業之必要相關人員利用之。
+          </p>
+          <p>
+            當事人可行使的權利：<br>
+            查詢或請求閱覽/請求製給複製本/請求補充或更正/請求停止蒐集、處理或利用/請求刪除/請求Mail服務信箱service@360d.com.tw通知欲行使之權利項目。
+          </p>
+          <p>
+            二、特別聲明：<br>
+            本公司屬於人力資源服務之非公務機關，有關人員基本資料及測驗結果運用於公司內部與合作客戶之測驗管理。<br>
+            若當初施測時，使用紙本測驗題本進行填答，該紙本題本已於測驗結果鍵入系統後，立即進行銷毀。<br>
+            人員行使個人權利之查詢、閱覽、製給複製本時，將酌收必要成本費用。<br>
+            本公司已與內部所有從業人員簽署保密切結書及合作客戶或關係企業簽定個資保密條款，善盡保密之義務。<br>
+            人員基本資料均會登錄於公司心理測驗網站作業系統，該系統已裝設防火牆系統並設有專人負責資料庫之管理及維護作業。<br>
+            為提供精確人力市場資訊，本公司會針對測驗結果資料進行相關統計分析，例如性別分佈、學歷分佈、年齡分佈、測驗結果的趨勢統計等，該分析之結果僅會提出整體數據及文字說明，不會涉及特定個人資料之揭露。
+          </p>
+          <p>
+            ● 個人資料的對外提供：<br>
+            當司法警察機關基於偵查犯罪之公益目的或為保護受害當事人之合法權益，我們基於公共利益之考量，將配合司法警察機關提供特定求職朋友之個人資料。全國各檢察署或法院因個案行文請求提供協助時，我們亦將配合提供。
+          </p>
+          <p>
+            ● 隱私權保護政策內容的修改及公佈：<br>
+            360d才庫人力資源網站保留修改本隱私權保護政策內容之權利，邇後若有修改時，我們不會個別通知，但會於本網站上公佈新修改之內容，供您閱覽。如您有任何疑問，請到「聯絡我們」告訴我們，我們將儘速為您處理。
+          </p>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer">
+          <button class="btn btn-default" type="button" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /隱私聲明 Modal -->
+
+  <script>
+    w3.includeHTML();
+
+    $(document).ready(function () {
+      var url = location.href;
+      if (url.indexOf('?') != -1) {
+        var id = "";
+        //在此直接將各自的參數資料切割放進ary中
+        var ary = url.split('?')[1].split('&');
+        //此時ary的內容為：
+        //ary[0] = 'p=U001'，ary[1] = 'id=GQSM'
+
+        //下迴圈去搜尋每個資料參數
+        for (i = 0; i <= ary.length - 1; i++) {
+          //如果資料名稱為p的話那就把他取出來
+          if (ary[i].split('=')[0] == 'p') {
+            p = ary[i].split('=')[1];
+            document.getElementById('p').value = p;
+            document.getElementById('p_2').value = p;
+          }
+        }
+
+      }
+    });
+  </script>
+</body>
+
+</html>
