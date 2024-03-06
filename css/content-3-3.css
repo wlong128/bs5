@@ -1,0 +1,39 @@
+/* content-3-3 */
+#content-3-3 {
+  background-color: #150b61;
+  padding: 72px 0;
+}
+.content-3-3-box {
+  background-image: linear-gradient(to right, #0071BC, #00B9DE, #02F1F1);
+  font-size: 24px;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin-bottom: 0;
+}
+.content-3-3-content {
+  font-size: 22px;
+  color: #ffffff;
+  padding-top: 16px;
+  margin: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

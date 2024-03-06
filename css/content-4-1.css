@@ -1,0 +1,83 @@
+/* content-4-1 */
+#content-4-1 {
+  background-color: #fff;
+  padding: 72px 0;
+}
+#content-4-1 h2 {
+  margin: 0 0 40px;
+  font-size: 32px;
+  font-weight: bold;
+}
+h3 {
+  padding-left: 10px;
+  font-weight: 600;
+  color: #333333;
+  font-size: 24px;
+  font-family: 'Raleway','Open Sans',Arial,Helvetica,sans-serif;
+}
+#content-4-1 .box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0px 20px -3px #ccc, 0 4px 6px -2px #ccc;
+}
+#content-4-1 p {
+  color: #000000;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  padding: 16px 16px;
+}
+#content-4-1 a {
+  color: #337ab7;
+  text-decoration: none;
+}
+#content-4-1 .btn-default {
+  color: #000000;
+  font-size: 20px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #content-4-1 h2 {
+    font-size: 48px;
+  }
+  #content-4-1 .content-text {
+    height: 122px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #content-4-1 .content-text {
+    height: 92px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #content-4-1 .content-text {
+    height: 152px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  #content-4-1 .content-text {
+    height: 122px;
+  }
+}

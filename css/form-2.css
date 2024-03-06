@@ -1,0 +1,82 @@
+/* form-2 */
+#form-2 {
+  background-color: #ffffff;
+  padding: 72px 0;
+  margin-bottom: 48px;
+}
+
+#form-2 .h5 {
+  font-weight: bold;
+}
+
+#form-2 .nav-pills .nav-link {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: unset;
+  padding: 25px 0;
+}
+
+#form-2 .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #66cccc;
+}
+
+#form-2 input,
+#form-2 select,
+#form-2 textarea {
+  border: 1px solid #333333;
+}
+
+#form-2 label {
+  color: #333;
+  font-weight: bold;
+  padding-top: 8px;
+}
+
+#form-2 .form-check-input {
+  margin-top: 12px;
+}
+
+#form-2 .btn-info {
+  background-color: #4B92FD;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 900;
+  border: 0;
+  padding: 5px 50px;
+}
+
+#form-2 .box-agree {
+  width: 191px;
+  margin: 0 auto;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #form-2 .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #form-2 .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #form-2 .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

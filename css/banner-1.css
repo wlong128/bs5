@@ -1,0 +1,32 @@
+/* Banner-1 */
+#banner-1 {
+  background-image: url(../images/banner-1-575.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #banner-1 {
+    background-image: url(../images/banner-1-991.png);
+    height: 758px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #banner-1 {
+    background-image: url(../images/banner-1-1920.png);
+    height: 758px;
+  }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

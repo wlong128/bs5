@@ -1,0 +1,70 @@
+/* page-2 */
+body {
+  background-color: #150b61;
+}
+.title-img {
+  padding: 114px 0 72px;
+}
+#content-1-2 {
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#content-2-1 {
+  background-color: transparent !important;
+  padding-top: 48px !important;
+}
+#content-2-2 {
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#content-3-2 {
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#content-3-3 {
+  background-color: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+#content-3-4 {
+  background-color: transparent !important;
+  padding-top: 0 !important;
+}
+.custom-bg-2 {
+  background-image: url(../images/page-2-bg-2-575.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .custom-bg-2 {
+    background-image: url(../images/page-2-bg-2-991.png);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .custom-bg-1 {
+    background-image: url(../images/page-2-bg-1.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .custom-bg-2 {
+    background-image: url(../images/page-2-bg-2-1920.png);
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

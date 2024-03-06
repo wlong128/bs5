@@ -1,0 +1,35 @@
+/* content-3-2 */
+#content-3-2 {
+  background-color: #150b61;
+  padding: 72px 0;
+}
+.content-3-2-box {
+  background-image: linear-gradient(to right, #0071BC, #00B9DE, #02F1F1);
+  border-radius: 16px 0 16px 0;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 24px 16px;
+  margin-bottom: 0;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

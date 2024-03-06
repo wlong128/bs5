@@ -1,0 +1,32 @@
+/* content-2-4 */
+#content-2-4 {
+  background-image: linear-gradient(to right, #53B2A3, #ACDABB);
+  padding: 72px 0;
+}
+.content-2-4-content {
+  font-size: 16px;
+  color: #000000;
+  padding-top: 16px;
+  margin: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}

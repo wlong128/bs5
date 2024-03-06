@@ -1,0 +1,48 @@
+/* table-1 */
+#table-1 {
+  background-color: #ffffff;
+  padding: 72px 0;
+  margin-bottom: 48px;
+}
+#table-1 .h5 {
+  font-weight: bold;
+}
+#table-1 .nav-pills .nav-link {
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  border-radius: unset;
+  padding: 25px 0;
+}
+#table-1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #66cccc;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  #table-1 .nav-pills .nav-link {
+    font-size: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #table-1 .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  #table-1 .nav-pills .nav-link {
+    font-size: 20px;
+  }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
